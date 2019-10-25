@@ -24,10 +24,10 @@ def plot(data):
 	axes[0,1].set_ylabel(r'$M$')
 
 	axes[1,0].set_xlabel(r'$T$')
-	axes[1,0].set_ylabel(r'$\chi$')
+	axes[1,0].set_ylabel(r'$c_m$')
 
 	axes[1,1].set_xlabel(r'$T$')
-	axes[1,1].set_ylabel(r'$c_m$')
+	axes[1,1].set_ylabel(r'$\chi$')
 
 	axes[0,0].errorbar(data[:,0], data[:,1], yerr=data[:,2], marker='.', ls='None')
 	axes[0,1].errorbar(data[:,0], data[:,3], yerr=data[:,4], marker='.', ls='None')
